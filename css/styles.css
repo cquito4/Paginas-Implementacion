@@ -91,6 +91,10 @@
     scroll-behavior: smooth;
   }
 }
+.boton{
+  border: none;
+  background-color: white;
+}
 
 body {
   margin: 0;
