@@ -91,6 +91,7 @@
     scroll-behavior: smooth;
   }
 }
+/*CSS parte Salud*/
 .imagen-hover:hover{
   transform: scale(1.2);
 }
@@ -99,6 +100,7 @@
   border: none;
   background-color: white;
 }
+
 
 body {
   margin: 0;
