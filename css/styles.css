@@ -12812,19 +12812,44 @@ header.masthead .masthead-heading {
   margin-right: auto;
 }
 
+#salud .salud-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #entretenimiento .entretenimiento-item .entretenimiento-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
 
+#salud .salud-item .salud-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+
 #entretenimiento .entretenimiento-item .entretenimiento-link .entretenimiento-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgba(143, 146, 119, 0.25);
   align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#salud .salud-item .salud-link .salud-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background:rgba(143, 146, 119, 0.25);
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
@@ -12835,7 +12860,16 @@ header.masthead .masthead-heading {
   color: white;
 }
 
+#salud .salud-item .salud-link .salud-hover .salud-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+
 #entretenimiento .entretenimiento-item .entretenimiento-link:hover .entretenimiento-hover {
+  opacity: 1;
+}
+
+#salud .salud-item .salud-link:hover .salud-hover {
   opacity: 1;
 }
 
@@ -12843,6 +12877,14 @@ header.masthead .masthead-heading {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  
+}
+
+#salud .salud-item .salud-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  
 }
 
 #entretenimiento .entretenimiento-item .entretenimiento-caption .entretenimiento-caption-heading {
@@ -12852,7 +12894,19 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
+#salud .salud-item .salud-caption .salud-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
 #entretenimiento .entretenimiento-item .entretenimiento-caption .entretenimiento-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#salud .salud-item .salud-caption .salud-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -12905,6 +12959,7 @@ header.masthead .masthead-heading {
 .entretenimiento-modal .close-modal:hover {
   opacity: 0.3;
 }
+
 
 .timeline {
   position: relative;
