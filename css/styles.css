@@ -1257,8 +1257,9 @@ progress {
     flex: 0 0 auto;
     width: 24.5%;
     border: 2px solid #F7F2DF;
-    background-color: white;    
-    border-radius: 10px;
+    background-color: white;      
+    margin: 3px;
+    padding: 0px;          
   }
 
   
@@ -12867,7 +12868,7 @@ header.masthead .masthead-heading {
 
 #salud .salud-item .salud-link .salud-hover .salud-hover-content {
   font-size: 1.25rem;
-  color: white;  
+  color: white;
 }
 
 #entretenimiento .entretenimiento-item .entretenimiento-link:hover .entretenimiento-hover {
