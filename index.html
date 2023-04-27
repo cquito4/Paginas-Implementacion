@@ -31,7 +31,19 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#entretenimiento"><b>Entretenimiento</b></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#salud"><b>Salud</b></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="#salud"
+                        id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Salud</a>
+                              
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./pages/salud/alimentos.html">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="./pages/salud/ejercicios.html">Ejercicios</a></li>
+                            <li><a class="dropdown-item" href="./pages/salud/medicinas.html">Medicinas</a></li>
+                            <li><a class="dropdown-item" href="./pages/salud/iess.html">IEES</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="#about"><b>Social</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#team"><b>Turismo</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><b>Contacto</b></a></li>                    
@@ -105,7 +117,7 @@
         </div>
     </section>
     <!-- Salud-->
-    <section class="page-section" id="salud">
+    <section class="page-section bg-light" id="salud">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Salud</h2>
@@ -114,27 +126,42 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <a href="./pages/salud/alimentos.html">
-                            <button class="boton" type="button botton-alimentos">
+                    <!-- <span class="fa-stack fa-4x"> -->
+                    <div class="salud-item">
+                        <!-- <a > -->
+                            <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/alimentos.html">
+                                <div class="salud-hover">
+                                    <div class="salud-hover-content"></div>
+                                </div>
+                                <img class="img-fluid" src="https://alimentatussentidos.files.wordpress.com/2017/02/image18.png" alt="..."/>
+                            </a>
+                            <div class="entretenimiento-caption">
+                                <div class="entretenimiento-caption-heading">Alimentos y Recetas</div>
+                                <div class="entretenimiento-caption-subheading text-muted">Descubre el sabor de una vida saludable. Encuentra los mejores alimentos y
+                                    recetas para disfrutar de una dieta equilibrada y deliciosa.</div>
+                            </div>
+                                <!-- <button class="boton" type="button botton-alimentos">
                                 <img src="https://alimentatussentidos.files.wordpress.com/2017/02/image18.png" alt=""
-                                    width="130" height="140" class="imagen-hover">
+                                    width="150" height="130" class="imagen-hover"> -->
 
                                 <!--- <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
-                            </button>
-                        </a>
-                    </span>
-                    <h4 class="my-3">Alimentos y Recetas</h4>
+                            <!-- </button> -->
+                        <!-- </a> -->
+
+                    </div>
+                        
+                    <!-- </span> -->
+                    <!-- <h4 class="my-3">Alimentos y Recetas</h4>
                     <p class="text-muted">Descubre el sabor de una vida saludable. Encuentra los mejores alimentos y
-                        recetas para disfrutar de una dieta equilibrada y deliciosa.</p>
+                        recetas para disfrutar de una dieta equilibrada y deliciosa.</p> -->
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <a href="./pages/salud/ejercicios.html">
                             <button class="boton" type="button">
                                 <img src="https://www.eluniverso.com/resizer/NW-k3DC2gIBi91vf_egOBYjfCMw=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/FJIEIG74RZH7TIIBEVJWXQKXJE.jpg"
-                                    alt="" width="160" height="140" class="imagen-hover">
+                                    alt="" width="160" height="130" class="imagen-hover">
                                 <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
                             </button>
@@ -149,7 +176,7 @@
                         <a href="./pages/salud/medicinas.html">
                             <button class="boton" type="button">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrPYuHaHWsFdeTF2a1B7gTxijq4dx5EbnGDLPO08LnCBSoahp3FhOsaqjlYpRtRjLQqA&usqp=CAU"
-                                    alt="" width="160" height="140" class="imagen-hover">
+                                    alt="" width="160" height="130" class="imagen-hover">
                                 <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
                             </button>
@@ -163,7 +190,7 @@
                     <span class="fa-stack fa-4x">
                         <a href="./pages/salud/iess.html">
                         <button class="boton" type="button">
-                            <img src="https://pbs.twimg.com/media/EtKlKaEWMAIR5zY.png" alt="" width="150" height="140"
+                            <img src="https://pbs.twimg.com/media/EtKlKaEWMAIR5zY.png" alt="" width="160" height="130"
                                 class="imagen-hover">
                             <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
