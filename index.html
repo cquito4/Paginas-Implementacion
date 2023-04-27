@@ -19,6 +19,7 @@
 </head>
 
 <body id="page-top">
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -31,18 +32,32 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#entretenimiento"><b>Entretenimiento</b></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link click-scroll dropdown-toggle" href="#salud" id="navbarLightDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Salud</b></a>
-
+                    <li class="nav-item"><a id="salud-btn" class="nav-link" href="#salud"><b>Salud</b></a>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./pages/salud/alimentos.html">Alimentos</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/ejercicios.html">Ejercicios</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/medicinas.html">Medicinas</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/iess.html">IEES</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/alimentos.html"><b>Alimentos</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/ejercicios.html"><b>Ejercicios</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/medicinas.html"><b>Medicinas</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/iess.html"><b>IESS</b></a></li>                            
                         </ul>
                     </li>
+                    <script>
+                        var saludBtn = document.getElementById("salud-btn");
+                        var saludDropdown = saludBtn.nextElementSibling;
 
+                        saludBtn.addEventListener("mouseenter", function () {
+                            saludDropdown.classList.add("show");
+                        });
+                        saludBtn.addEventListener("mouseleave", function () {
+                            saludDropdown.classList.remove("show");
+                        });
+
+                        saludDropdown.addEventListener("mouseenter", function () {
+                            saludDropdown.classList.add("show");
+                        });
+                        saludDropdown.addEventListener("mouseleave", function () {
+                            saludDropdown.classList.remove("show");
+                        });
+                    </script>
                     <li class="nav-item"><a class="nav-link" href="#about"><b>Social</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#team"><b>Turismo</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><b>Contacto</b></a></li>
@@ -175,7 +190,8 @@
                         <div class="entretenimiento-caption-heading">
                             <h4>Medicinas</h4>
                         </div>
-                        <div class="entretenimiento-caption-heading text-muted">Asegura tu bienestar con la mejor selección de medicinas. Encuentra todo
+                        <div class="entretenimiento-caption-heading text-muted">Asegura tu bienestar con la mejor
+                            selección de medicinas. Encuentra todo
                             lo
                             que necesitas para cuidar de tu salud de manera efectiva y segura.</div>
                     </div>
@@ -193,7 +209,8 @@
                         <div class="entretenimiento-caption-heading">
                             <h4>Acceso al IESS</h4>
                         </div>
-                        <div class="entretenimiento-caption-heading text-muted">Cuida de tu salud y tu futuro, accede a los mejores servicios del IESS y
+                        <div class="entretenimiento-caption-heading text-muted">Cuida de tu salud y tu futuro, accede a
+                            los mejores servicios del IESS y
                             disfruta de una atención médica de calidad y con facilidades para ti.</div>
                     </div>
                 </div>

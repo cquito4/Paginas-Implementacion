@@ -52,3 +52,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+//funcion que hace que el dropdown de salud se muestre al pasar el mouse por encima
+var saludBtn = document.getElementById("salud-btn");
+var saludDropdown = saludBtn.nextElementSibling;
+
+saludBtn.addEventListener("mouseenter", function () {
+    saludDropdown.classList.add("show");
+});
+saludBtn.addEventListener("mouseleave", function () {
+    saludDropdown.classList.remove("show");
+});
+
+saludDropdown.addEventListener("mouseenter", function () {
+    saludDropdown.classList.add("show");
+});
+saludDropdown.addEventListener("mouseleave", function () {
+    saludDropdown.classList.remove("show");
+});
