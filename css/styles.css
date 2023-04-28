@@ -95,10 +95,100 @@
 .imagen-hover:hover{
   transform: scale(1.2);
 }
-.boton{
+
+form {
+  width: 550px;
+  margin-left: 50px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+#mensaje{
+  resize:none;
+}
+form textarea {
+  height: 120px;
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #999277;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  /*cursor: pointer;*/
+}
+
+form button[type="submit"]:hover {
+  background-color: #f7ed94;
+}
+
+
+.botonCompartir{
   width: "600px";  
   border: none;
-  background-color: white;
+  background-color: red;
+}
+
+.formulario-imagen {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.formulario {
+  margin: 1px;
+  padding: 1px;
+}
+
+.imagen {
+  flex: 1;
+  padding: 1px;
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 60%;
+  height: auto;
+  margin: 1px;
+  
 }
 
 
@@ -759,7 +849,7 @@ progress {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  /*margin-left: calc(-0.5 * var(--bs-gutter-x));*/
 }
 
 .row>* {
@@ -1041,7 +1131,11 @@ progress {
 
   .col-sm-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 25%;
+  }
+  .salud-col-sm-4 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 
   .col-sm-5 {
@@ -1255,7 +1349,7 @@ progress {
 
   .col-md-4 {
     flex: 0 0 auto;
-    width: 24.5%;
+    width: 24%;
     border: 2px solid #f3e4b0;
     background-color: white;      
     margin: 3px;
@@ -1476,6 +1570,10 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+  }
+  .salud-col-lg-4 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 
   .col-lg-5 {
@@ -12774,7 +12872,24 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
-
+header.salud {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/salud/alimentos/pAlimentos.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.salud .salud-subheading{
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -12783,6 +12898,13 @@ header.masthead .masthead-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+header.salud .salud-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
@@ -12792,9 +12914,22 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 768px) {
+  header.salud {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+
+@media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
+  }
+
+  header.salud .salud-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
   }
 
   header.masthead .masthead-subheading {
@@ -12803,7 +12938,13 @@ header.masthead .masthead-heading {
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
-
+  header.salud .salud-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
