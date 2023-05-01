@@ -71,3 +71,37 @@ saludDropdown.addEventListener("mouseleave", function () {
 });
 
 //carrusel
+
+//compartir receta
+function mostrarMensaje() {
+    var mensajeEnviado = document.getElementById("mensaje-enviado");
+    mensajeEnviado.classList.remove("oculto");
+}
+
+function ocultarMensaje() {
+    var mensajeEnviado = document.getElementById("mensaje-enviado");
+    mensajeEnviado.classList.add("oculto");
+    // Limpiar los campos del formulario
+    document.getElementById("nombre").value = "";
+    document.getElementById("receta").value = "";
+    document.getElementById("mensaje").value = "";
+    document.getElementById("mensaje1").value = "";
+}
+//comentario
+function mostrarComentario() {
+    var comentarioEnviado = document.getElementById("comentario-enviado");
+    comentarioEnviado.classList.remove("oculto");
+}
+
+function ocultarComentario() {
+    var comentarioEnviado = document.getElementById("comentario-enviado");
+    comentarioEnviado.classList.add("oculto");
+    document.getElementById("nombreC").value = "";
+    document.getElementById("comentarioC").value = "";
+}
+
+//iess
+function openUrl() {
+    const externalUrl = "https://www.iess.gob.ec/en/web/pensionados/programa-del-adulto-mayor";
+    window.open(externalUrl, "_blank");
+  }

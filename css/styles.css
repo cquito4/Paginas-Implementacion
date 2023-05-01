@@ -96,175 +96,6 @@
   transform: scale(1.2);
 }
 
-form {
-  width: 550px;
-  margin-left: 50px;
-  padding: 0px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-}
-
-form h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  font-size: 16px;
-  color: #333;
-}
-#mensaje{
-  resize:none;
-}
-form textarea {
-  height: 120px;
-}
-
-.comentarios {
-  margin-top: 20px;
-}
-
-.comentarios h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.comentarios form {
-  margin-bottom: 20px;
-}
-
-.comentarios label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.comentarios input[type="text"],
-.comentarios textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  resize: vertical;
-}
-
-.comentarios button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.comentarios button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.lista-comentarios {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.lista-comentarios h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.lista-comentarios ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.lista-comentarios li {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-}
-
-.lista-comentarios li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-
-
-form button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #999277;
-  color: black;
-  font-size: 16px;
-  font-weight: bold;
-  /*cursor: pointer;*/
-}
-
-form button[type="submit"]:hover {
-  background-color: #f7ed94;
-}
-
-
-.botonCompartir{
-  width: "600px";  
-  border: none;
-  background-color: red;
-}
-
-.formulario-imagen {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-}
-
-.formulario {
-  margin: 1px;
-  padding: 1px;
-}
-
-.imagen {
-  flex: 1;
-  padding: 1px;
-  text-align: center;
-}
-
-.imagen img {
-  max-width: 60%;
-  height: auto;
-  margin: 1px;
-  
-}
-
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -12743,8 +12574,27 @@ header.salud {
   background-position: center center;
   background-size: cover;
 }
+header.iess {
+  padding-top: 22.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/salud/iess/iess.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 header.salud .salud-subheading{
   font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.iess .iess-subheading{
+  font-size: 2.5rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
@@ -12759,6 +12609,13 @@ header.masthead .masthead-subheading {
 }
 
 header.salud .salud-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.iess .iess-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -12792,6 +12649,13 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
 
+  header.salud .iess-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -12799,6 +12663,12 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.salud .salud-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  header.iess .iess-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -13268,3 +13138,106 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /*carrusel*/
+
+/*compartir receta*/
+.mensaje-enviado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje-enviado-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 80px;
+}
+
+button[type="submit"] {
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0077cc;
+}
+
+.error {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 5px;
+}
+
+/*comentarios*/
+.comentario-enviado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comentario-enviado-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
