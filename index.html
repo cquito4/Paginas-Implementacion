@@ -10,7 +10,7 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>    
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -19,6 +19,7 @@
 </head>
 
 <body id="page-top">
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -31,19 +32,14 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#entretenimiento"><b>Entretenimiento</b></a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link click-scroll dropdown-toggle" href="#salud"
-                        id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Salud</a>
-                              
+                    <li class="nav-item"><a id="salud-btn" class="nav-link" href="#salud"><b>Salud</b></a>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./pages/salud/alimentos.html">Alimentos</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/ejercicios.html">Ejercicios</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/medicinas.html">Medicinas</a></li>
-                            <li><a class="dropdown-item" href="./pages/salud/iess.html">IEES</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/alimentos.html"><b>Alimentos</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/ejercicios.html"><b>Ejercicios</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/medicinas.html"><b>Medicinas</b></a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pages/salud/iess.html"><b>IESS</b></a></li>                            
                         </ul>
-                    </li>
-
+                    </li>                    
                     <li class="nav-item"><a class="nav-link" href="#about"><b>Social</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#team"><b>Turismo</b></a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><b>Contacto</b></a></li>
@@ -64,8 +60,9 @@
     <section class="page-section bg-light" id="entretenimiento">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Entretenimeinto</h2>
-                <h3 class="section-subheading text-muted">“Hago actividades de memoria, salidas, hago amigos…¡a mi edad! Me siento feliz”.</h3>
+                <h2 class="section-heading text-uppercase">Entreteniminto</h2>
+                <h3 class="section-subheading text-muted">“Hago actividades de memoria, salidas, hago amigos…¡a mi edad!
+                    Me siento feliz”.</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-4 md-4">
@@ -93,7 +90,7 @@
                             <img class="img-fluid" src="assets/img/entretenimiento/2.jpg" alt="..." />
                         </a>
                         <div class="entretenimiento-caption">
-                            <div class="entretenimiento-caption-heading">OLIMPIADAS DEL ADULTO MAYOR</div>
+                            <div class="entretenimiento-caption-heading">OLIMPIADAS</div>
                             <div class="entretenimiento-caption-subheading text-muted">Demuestra tus habilidades</div>
                         </div>
                     </div>
@@ -124,82 +121,80 @@
                 <h3 class="section-subheading text-muted">Tu bienestar es nuestra prioridad, elige la mejor opción en
                     salud y vive plenamente.</h3>
             </div>
-            <div class="row text-center">
+            <div class="container row text-center">
                 <div class="col-md-4">
-                    <!-- <span class="fa-stack fa-4x"> -->
                     <div class="salud-item">
-                        <!-- <a > -->
-                            <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/alimentos.html">
-                                <div class="salud-hover">
-                                    <div class="salud-hover-content"></div>
-                                </div>
-                                <img class="img-fluid" src="https://alimentatussentidos.files.wordpress.com/2017/02/image18.png" alt="..."/>
-                            </a>
-                            <div class="entretenimiento-caption">
-                                <div class="entretenimiento-caption-heading">Alimentos y Recetas</div>
-                                <div class="entretenimiento-caption-subheading text-muted">Descubre el sabor de una vida saludable. Encuentra los mejores alimentos y
-                                    recetas para disfrutar de una dieta equilibrada y deliciosa.</div>
+                        <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/alimentos.html">
+                            <div class="salud-hover">
+                                <div class="salud-hover-content"></div>
                             </div>
-                                <!-- <button class="boton" type="button botton-alimentos">
-                                <img src="https://alimentatussentidos.files.wordpress.com/2017/02/image18.png" alt=""
-                                    width="150" height="130" class="imagen-hover"> -->
-
-                                <!--- <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
-                            <!-- </button> -->
-                        <!-- </a> -->
-
+                            <img class="img-fluid" src="./assets/img/salud/alimento.png" alt="..." />
+                        </a>
+                        <div class="entretenimiento-caption">
+                            <div class="entretenimiento-caption-heading">
+                                <h4>Alimentos y Recetas</h4>
+                            </div>
+                            <div class="entretenimiento-caption-subheading text-muted">Descubre el sabor de una vida
+                                saludable. Encuentra los mejores alimentos y
+                                recetas para disfrutar de una dieta equilibrada y deliciosa.</div>
+                        </div>
                     </div>
-                        
-                    <!-- </span> -->
-                    <!-- <h4 class="my-3">Alimentos y Recetas</h4>
-                    <p class="text-muted">Descubre el sabor de una vida saludable. Encuentra los mejores alimentos y
-                        recetas para disfrutar de una dieta equilibrada y deliciosa.</p> -->
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <a href="./pages/salud/ejercicios.html">
-                            <button class="boton" type="button">
-                                <img src="https://www.eluniverso.com/resizer/NW-k3DC2gIBi91vf_egOBYjfCMw=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/FJIEIG74RZH7TIIBEVJWXQKXJE.jpg"
-                                    alt="" width="160" height="130" class="imagen-hover">
-                                <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
-                            </button>
+                    <div class="salud-item">
+                        <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/ejercicios.html">
+                            <div class="salud-hover">
+                                <div class="salud-hover-content"></div>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/salud/ejercicio.png" alt="..." />
                         </a>
-                    </span>
-                    <h4 class="my-3">Salud y Ejercicios</h4>
-                    <p class="text-muted">Activa tu cuerpo y tu mente! Encuentra los mejores ejercicios y consejos de
-                        salud para disfrutar de una vida activa y saludable.</p>
+                        <div class="entretenimiento-caption">
+                            <div class="entretenimiento-caption-heading">
+                                <h4>Salud y Ejercicios</h4>
+                            </div>
+                            <div class="entretenimiento-caption-subheading text-muted">Activa tu cuerpo y tu mente!
+                                Encuentra
+                                los mejores ejercicios y consejos de
+                                salud para disfrutar de una vida activa y saludable.</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <a href="./pages/salud/medicinas.html">
-                            <button class="boton" type="button">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfrPYuHaHWsFdeTF2a1B7gTxijq4dx5EbnGDLPO08LnCBSoahp3FhOsaqjlYpRtRjLQqA&usqp=CAU"
-                                    alt="" width="160" height="130" class="imagen-hover">
-                                <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>-->
-                            </button>
+                    <div class="salud-item">
+                        <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/medicinas.html">
+                            <div class="salud-hover">
+                                <div class="salud-hover-content"></div>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/salud/medicina.png" alt="..." />
                         </a>
-                    </span>
-                    <h4 class="my-3">Medicinas</h4>
-                    <p class="text-muted">Asegura tu bienestar con la mejor selección de medicinas. Encuentra todo lo
-                        que necesitas para cuidar de tu salud de manera efectiva y segura.</p>
+                    </div>
+                    <div class="entretenimiento-caption">
+                        <div class="entretenimiento-caption-heading">
+                            <h4>Medicinas</h4>
+                        </div>
+                        <div class="entretenimiento-caption-heading text-muted">Asegura tu bienestar con la mejor
+                            selección de medicinas. Encuentra todo
+                            lo
+                            que necesitas para cuidar de tu salud de manera efectiva y segura.</div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <a href="./pages/salud/iess.html">
-                        <button class="boton" type="button">
-                            <img src="https://pbs.twimg.com/media/EtKlKaEWMAIR5zY.png" alt="" width="160" height="130"
-                                class="imagen-hover">
-                            <!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
-                    </a>
-                        </button>
-                    </span>
-                    <h4 class="my-3">Acceso al IESS</h4>
-                    <p class="text-muted">Cuida de tu salud y tu futuro, accede a los mejores servicios del IESS y
-                        disfruta de una atención médica de calidad y con facilidades para ti.</p>
+                    <div class="salud-item">
+                        <a class="salud-link" data-bs-toggle="modal" href="./pages/salud/iess.html">
+                            <div class="salud-hover">
+                                <div class="salud-hover-content"></div>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/salud/iess.png" alt="..." />
+                        </a>
+                    </div>
+                    <div class="entretenimiento-caption">
+                        <div class="entretenimiento-caption-heading">
+                            <h4>Acceso al IESS</h4>
+                        </div>
+                        <div class="entretenimiento-caption-heading text-muted">Cuida de tu salud y tu futuro, accede a
+                            los mejores servicios del IESS y
+                            disfruta de una atención médica de calidad y con facilidades para ti.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -454,7 +449,8 @@
     </footer>
     <!-- entretenimiento Modals-->
     <!-- entretenimiento item 1 modal popup-->
-    <div class="entretenimiento-modal modal fade" id="entretenimientoModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="entretenimiento-modal modal fade" id="entretenimientoModal1" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -465,10 +461,13 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">TECNOLOGÍA FACIL</h2>
-                                <p class="item-intro text-muted">Descubre las ultimos productos en tendencia y mantente actualizado.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/1.jpg" alt="..." />
-                                <p>A ratos podemos llegar a pensar que la tecnología es muy complicada, pero una vez aprendemos a usarla, nos puede llegar a facilitar la vida.
-                                    Conoce los nuevos productos que sin duda quisieras adquirir.</p>                                
+                                <p class="item-intro text-muted">Descubre las ultimos productos en tendencia y mantente
+                                    actualizado.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/1.jpg"
+                                    alt="..." />
+                                <p>A ratos podemos llegar a pensar que la tecnología es muy complicada, pero una vez
+                                    aprendemos a usarla, nos puede llegar a facilitar la vida.
+                                    Conoce los nuevos productos que sin duda quisieras adquirir.</p>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -482,7 +481,8 @@
         </div>
     </div>
     <!-- entretenimiento item 2 modal popup-->
-    <div class="entretenimiento-modal modal fade" id="entretenimientoModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="entretenimiento-modal modal fade" id="entretenimientoModal2" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -493,9 +493,12 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Olimpiadas para el Adulto Mayor</h2>
-                                <p class="item-intro text-muted">Demustra tus habilidades y destrezas en las Olimpiadas!</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/2.jpg" alt="..." />
-                                <p>¿Sabías tú que todavía puedes participar en las olimpiadas? No dejes que tu edad sea un límite y demuéstrate que sigues siendo un campeón.
+                                <p class="item-intro text-muted">Demustra tus habilidades y destrezas en las Olimpiadas!
+                                </p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/2.jpg"
+                                    alt="..." />
+                                <p>¿Sabías tú que todavía puedes participar en las olimpiadas? No dejes que tu edad sea
+                                    un límite y demuéstrate que sigues siendo un campeón.
                                     Conoce las competencias sobre el adulto mayor.</p>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
@@ -510,7 +513,8 @@
         </div>
     </div>
     <!-- entretenimiento item 3 modal popup-->
-    <div class="entretenimiento-modal modal fade" id="entretenimientoModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="entretenimiento-modal modal fade" id="entretenimientoModal3" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -522,7 +526,8 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Videojuegos</h2>
                                 <p class="item-intro text-muted">Conoce juegos en linea que te pueden interesar</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/3.jpg" alt="..." />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/entretenimiento/3.jpg"
+                                    alt="..." />
                                 <p>Videojuegos de entretenidos que seguramente te pueden interesar.
                                     Conoce lo nuevo que te trae el mundo en cuanto a entretenimiento.
                                     Dejemos fluir nuestra creatividad y nuestro carácter competitivo.</p>
@@ -551,7 +556,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
