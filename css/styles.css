@@ -522,6 +522,7 @@ output {
   margin: 20px 0;
 }
 
+
 summary {
   display: list-item;
   cursor: pointer;
@@ -13782,4 +13783,45 @@ button[type="submit"]:hover {
 .imge {
   max-width: 100%;
   height: auto;
+}
+
+/*ejericios Doctor*/
+.gracias-enviado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-enviado-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.oculto {
+  display: none;
+}
+
+.cerrar {
+ float: right;
+}
+
+.entretenimiento-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.entretenimiento-modal .close-modal:hover {
+  opacity: 0.3;
 }
