@@ -697,6 +697,22 @@ progress {
   margin-left: auto;
 }
 
+.container2,
+.container2-fluid,
+.container2-xxl,
+.container2-xl,
+.container2-lg,
+.container2-md,
+.container2-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 70%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 576px) {
 
   .container-sm,
@@ -9065,7 +9081,7 @@ fieldset:disabled .btn {
 }
 
 .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 60% !important;
 }
 
 .rounded-pill {
@@ -12433,7 +12449,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .page-section h2.section-heading,
@@ -12450,6 +12466,80 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+}
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  /* --primary-color: #5bc1ac;
+  --secondary-color: #5a6f80; */
+  --section-bg-color: #f0f8ff;
+  /* --site-footer-bg-color: #44525d;
+  --custom-btn-bg-color: #597081;
+  --custom-btn-bg-hover-color: #5bc1ac;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb; */
+}
+
+/* --body-font-family: 'Metropolis', sans-serif;
+
+  --h1-font-size: 52px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 16px;
+  --btn-font-size: 18px;
+  --copyright-font-size: 14px;
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+} */
+
+/*---------------------------------------
+  CUSTOM TEXT BOX               
+-----------------------------------------*/
+.custom-text-box {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  margin-bottom: 24px;
+  padding: 40px;
+}
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+
+.section-overlay {
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.section-overlay+.container {
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -12581,7 +12671,7 @@ header.salud {
 }
 
 header.tecnologia {
-  padding-top: 25rem;
+  padding-top: 30rem;
   padding-bottom: 8rem;
   text-align: center;
   color: #fff;
@@ -12598,6 +12688,18 @@ header.iess {
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/salud/iess/iess.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.olimpiadas {
+  padding-top: 18rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/entretenimiento/olimpiadas/portada.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12632,6 +12734,14 @@ header.iess .iess-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+header.olimpiadas .olimpiadas-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 header.ejercicios .ejercicios-subheading {
   font-size: 1.9rem;
   font-style: italic;
@@ -12648,6 +12758,16 @@ header.masthead .masthead-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+header.tecnologia .tecnologia-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
 header.salud .salud-heading {
   font-size: 3.25rem;
   font-weight: 700;
@@ -12657,6 +12777,14 @@ header.salud .salud-heading {
 }
 
 header.iess .iess-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.olimpidas .olimpidas-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -12680,6 +12808,51 @@ header.masthead .masthead-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+header.tecnologia .tecnologia-heading {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*---------------------------------------
+  FEATURE BLOCK              
+-----------------------------------------*/
+.featured-block {
+  text-align: center;
+  transition: all 0.5s ease;
+  min-height: 256px;
+  padding: 15px;
+}
+
+.featured-block:hover {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.featured-block:hover .featured-block-image {
+  transform: scale(0.75);
+}
+
+.featured-block-image {
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.featured-block:hover .featured-block-text {
+  margin-top: 0;
+}
+
+.featured-block-text {
+  color: var(--primary-color);
+  font-size: x-large;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+
 @media (min-width: 768px) {
   header.salud {
     padding-top: 17rem;
@@ -12690,6 +12863,11 @@ header.masthead .masthead-heading {
     header.masthead {
       padding-top: 17rem;
       padding-bottom: 12.5rem;
+    }
+
+    header.tecnologia {
+      padding-top: 34rem;
+      padding-bottom: 1rem;
     }
 
     header.salud .salud-subheading {
@@ -12713,6 +12891,13 @@ header.masthead .masthead-heading {
       margin-bottom: 2rem;
     }
 
+    header.tecnologia .tecnologia-subheading {
+      font-size: 2.25rem;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+    }
+
     header.salud .salud-heading {
       font-size: 4.5rem;
       font-weight: 700;
@@ -12726,6 +12911,13 @@ header.masthead .masthead-heading {
       line-height: 4.5rem;
       margin-bottom: 4rem;
     }
+
+    header.olimpiadas .olimpiadas-heading {
+      font-size: 4.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+    }
   }
 
   header.masthead .masthead-heading {
@@ -12733,6 +12925,13 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
+  }
+
+  header.tecnologia .tecnologia-heading {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    margin-bottom: 6rem;
   }
 }
 
