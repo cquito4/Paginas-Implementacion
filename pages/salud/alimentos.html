@@ -99,7 +99,7 @@
                                     class=" carousel-image img-fluid" alt="...">
                                 <div class="carousel-caption d-flex flex-column justify-content-end">
                                     <h1>Alimentos <br>proteicos</h1>
-                                    <p>Los alimentos proteicos son la base de una  <br> 
+                                    <p>Los alimentos proteicos son la base de una <br>
                                         alimentación saludable y balanceada, ya <br>
                                         ayuda al desarrollo y mantenimiento de tus <br>
                                         músculos y huesos</p>
@@ -313,13 +313,11 @@
             <div class="row justify-content-center align-items-center ">
                 <div class="col-md-6">
                     <div>
-                        <form class="text-lg-start">
+                        <form class="text-lg-start" id="miFormulario">
                             <label for="nombre"><b>¿Cómo te llamas?</b> </label>
                             <input type="text" id="nombre" name="nombre" value="Marcelo"><br>
-
                             <label for="correo"><b>¿Cómo se llama tu receta?</b> </label>
                             <input type="text" id="receta" name="receta" value="Albondigas a la boloñesa"><br>
-
                             <label for="mensaje"><b>Describenos como se prepara</b> </label>
                             <form>
                                 <label for="ingredientes">Ingredientes:</label>
@@ -334,8 +332,9 @@
                             </form>
                         </form>
                         <div class="text-center">
-                            <button type="button" class="text-center btn btn-primary btn-xl "
+                            <button type="button" class="text-center btn btn-primary btn-xl"
                                 onclick="mostrarMensaje()">Compartir receta</button>
+
                         </div>
                     </div>
                 </div>
@@ -359,10 +358,8 @@
                 <form action="#" method="post">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombreC" name="nombre" required>
-
                     <label for="comentario">Comentario:</label>
                     <textarea id="comentarioC" name="comentario" rows="5" required></textarea>
-
                     <button type="button" class="text-center btn btn-primary btn-xl"
                         onclick="mostrarComentario()">Enviar comentario</button>
                 </form>
