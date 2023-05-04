@@ -516,9 +516,12 @@ output {
   display: inline-block;
 }
 
-iframe {
-  border: 0;
+.iframe {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
 }
+
 
 summary {
   display: list-item;
@@ -656,6 +659,11 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.img-fluid1 {
+  height: 300px;
+  width: 400px;
 }
 
 .img-thumbnail {
@@ -1287,6 +1295,22 @@ progress {
     padding: 8px;
   }
 
+  .ejercicios-col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33%;
+    border: 1px solid #f3e4b0;
+    background-color: white;
+    margin: 0px;
+    padding: 8px;
+  }
+
+  .medicina-col-md-4 {
+    flex: 0 0 auto;
+    width: 50%;
+    background-color: white;
+    margin: 0px;
+    padding: 8px;
+  }
 
   .col-md-5 {
     flex: 0 0 auto;
@@ -1500,6 +1524,7 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+
   }
 
   .salud-col-lg-4 {
@@ -12877,7 +12902,7 @@ p {
 
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;/
+    height: 1.5rem;
   }
 
   #mainNav .navbar-nav .nav-item {
@@ -12961,12 +12986,12 @@ header.ejercicios {
   background-size: cover;
 }
 
-header.videojuegos {
-  padding-top: 25.5rem;
-  padding-bottom: 8rem;
+header.medicina {
+  padding-top: 20.5rem;
+  padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/entretenimiento/videojuegos/1.jpeg");
+  background-image: url("../assets/img/salud/medicinas/medicinas.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -13005,16 +13030,16 @@ header.ejercicios .ejercicios-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header.videojuegos .videojuegos-subheading {
-  font-size: 1.9rem;
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+header.medicina .medicina-subheading {
+  font-size: 2rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
@@ -13063,7 +13088,7 @@ header.ejercicios .ejercicios-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header.videojuegos .videojuegos-heading {
+header.medicina .medicina-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -13155,14 +13180,14 @@ header.tecnologia .tecnologia-heading {
       margin-bottom: 2rem;
     }
 
-    header.masthead .masthead-subheading {
+    header.salud .medicina-subheading {
       font-size: 2.25rem;
       font-style: italic;
       line-height: 2.25rem;
       margin-bottom: 2rem;
     }
 
-    header.tecnologia .tecnologia-subheading {
+    header.masthead .masthead-subheading {
       font-size: 2.25rem;
       font-style: italic;
       line-height: 2.25rem;
@@ -13183,7 +13208,7 @@ header.tecnologia .tecnologia-heading {
       margin-bottom: 4rem;
     }
 
-    header.olimpiadas .olimpiadas-heading {
+    header.medicina .medicina-heading {
       font-size: 4.5rem;
       font-weight: 700;
       line-height: 4.5rem;
@@ -13686,6 +13711,47 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: none;
 }
 
+/*Estilo para la receta ul*/
+.entretenimiento-modal #receta1 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta2 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta3 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta4 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta5 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta6 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta7 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta8 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta9 ul {
+  list-style-type: square;
+}
+
+.entretenimiento-modal #receta10 ul {
+  list-style-type: square;
+}
+
 /* Estilos para el formulario */
 form {
   max-width: 500px;
@@ -13768,4 +13834,83 @@ button[type="submit"]:hover {
 .imge {
   max-width: 100%;
   height: auto;
+}
+
+/*ejericios Doctor*/
+.gracias-enviado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-enviado-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.cerrar {
+  float: right;
+}
+
+.entretenimiento-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.entretenimiento-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+/*Medicina*/
+.gracias-medicina {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-medicina-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.oculto {
+  display: none;
+}
+
+.cerrar {
+  float: right;
+}
+
+/*Carrusel bordes*/
+.carousel-inner {
+  border: solid #f3e4b0;
 }
