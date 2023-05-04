@@ -98,6 +98,24 @@ function validarFormulariob() {
     }
 }
 
+//valida medicina
+function validarFormularioc() {
+    var nombre = document.getElementById("nombre").value;
+    var edad = document.getElementById("edad").value;
+    var telefono = document.getElementById("telefono").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+
+    if (nombre === "" || (edad === "" && edad >= 65) || telefono === "" || email === "" || mensaje === "") {
+        alert("Por favor, completa todos los campos del formulario");
+        return false;
+    } else {
+        alert("El formulario es válido, se puede enviar");
+        return true;
+    }
+}
+
 //compartir receta
 function mostrarMensaje() {
     if (validarFormularioa() === true) {
@@ -129,7 +147,7 @@ function ocultarComentario() {
     comentarioEnviado.classList.add("oculto");
 
     document.getElementById("nombreC").value = "";
-    document.getElementById("comentarioC").value = "";    
+    document.getElementById("comentarioC").value = "";
 }
 
 //iess
@@ -137,9 +155,12 @@ function openUrl() {
     const externalUrl = "https://www.iess.gob.ec/en/web/pensionados/programa-del-adulto-mayor";
     window.open(externalUrl, "_blank");
 }
-}
 
 //ejercicios doctor
+function mostrarDoctor() {
+    var mensajeEnviado = document.getElementById("mensaje-enviado");
+    mensajeEnviado.classList.remove("oculto");
+}
 function graciasMensaje() {
     var graciasEnviado = document.getElementById("gracias-enviado");
     graciasEnviado.classList.remove("oculto");
@@ -199,5 +220,22 @@ linkedinLink.addEventListener("click", function (event) {
 });
 
 //medicina formulario
+function mostrarMedicina() {
+    if (validarFormularioc() === true) {        
+        var graciasMedicina = document.getElementById("gracias-medicina");        
+        graciasMedicina.classList.remove("oculto");           
+    } else{
+        $('#servicio2').modal('show');
+    }
+}
 
-
+function ocultarMedicina(){
+    var graciasEnviado = document.getElementById("gracias-medicina");
+    graciasEnviado.classList.add("oculto");
+    // Limpiar los campos del formulario
+    document.getElementById("nombre").value = "";
+    document.getElementById("edad").value = "";
+    document.getElementById("telefono").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mensaje").value = "";
+}

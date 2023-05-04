@@ -169,7 +169,8 @@
 
                         <a class="btn btn-dark btn-social mx-2"
                             href="https://www.linkedin.com/in/johannagavidia?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvKnTPcz1ROuGHkRBgfk1Qg%3D%3D"
-                            aria-label="Parveen Anand LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            aria-label="Parveen Anand LinkedIn Profile" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a>Linkedin</a>
                     </div>
                 </div>
@@ -180,7 +181,8 @@
                         <p class="text-muted">Especialista en Geriatría y Gerontología</p>
                         <a class="btn btn-dark btn-social mx-2"
                             href="https://www.linkedin.com/in/margoth-barrera-932784267?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwJ%2FGxNyRT1eJg9GwUB2ZDA%3D%3D"
-                            aria-label="Diana Petersen LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            aria-label="Diana Petersen LinkedIn Profile" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a>Linkedin</a>
                     </div>
                 </div>
@@ -191,7 +193,8 @@
                         <p class="text-muted">Médico en Geriatría y Gerontología</p>
                         <a class="btn btn-dark btn-social mx-2"
                             href="https://www.linkedin.com/in/leonidas-bonilla-carballo-709811200?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQ8QxP4R4TvuujiOfMfiDTA%3D%3D"
-                            aria-label="Larry Parker LinkedIn Profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            aria-label="Larry Parker LinkedIn Profile" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                         <a>Linkedin</a>
                     </div>
                 </div>
@@ -273,26 +276,27 @@
                                     </p>
                                     <div>
                                         <label for="nombre">Nombre completo:</label>
-                                        <input type="text" id="nombre" name="nombre" required>
+                                        <input type="text" id="nombre" name="nombre">
                                     </div>
                                     <div>
                                         <label for="edad">Edad:</label>
-                                        <input type="number" id="edad" name="edad" min="65" required>
+                                        <input type="number" id="edad" name="edad" min="65">
                                     </div>
                                     <div>
                                         <label for="telefono">Teléfono:</label>
-                                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">
                                     </div>
                                     <div>
                                         <label for="email">Correo electrónico:</label>
-                                        <input type="email" id="email" name="email" required>
+                                        <input type="email" id="email" name="email">
                                     </div>
                                     <div>
                                         <label for="mensaje">¿Por qué te gustaría unirte a nuestro grupo de asistencia
                                             social?</label>
-                                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                                     </div>
-                                    <button type="submit">Enviar</button>
+                                    <button type="button" class="text-center btn btn-primary btn-xl "
+                                        onclick="mostrarMedicina()" data-bs-dismiss="modal">Enviar</button>
                                 </form>
                             </div>
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -303,6 +307,28 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Universidad de Cuenca 2023</div>
+                <div class="col-lg-4 my-3 my-lg-0">                    
+                    <p>Marcelo Avila</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Politicas de Privacidad</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terminos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="gracias-medicina" class="gracias-medicina oculto">
+        <div class="gracias-medicina-contenido">
+            <h2>¡Gracias por tu postulación!</h2>
+            <p>Nos pondremos en contacto contigo lo antes posible</p>
+            <button onclick="ocultarMedicina()">Cerrar</button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
