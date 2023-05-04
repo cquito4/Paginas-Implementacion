@@ -1303,7 +1303,13 @@ progress {
     margin: 0px;
     padding: 8px;          
   }  
-
+  .medicina-col-md-4{
+    flex: 0 0 auto;
+    width: 50%;
+    background-color: white;      
+    margin: 0px;
+    padding: 8px;         
+  }
   .col-md-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -1516,6 +1522,7 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    
   }
 
   .salud-col-lg-4 {
@@ -12893,7 +12900,7 @@ p {
 
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;/
+    height: 1.5rem;
   }
 
   #mainNav .navbar-nav .nav-item {
@@ -12977,8 +12984,8 @@ header.ejercicios {
   background-size: cover;
 }
 header.medicina {
-  padding-top: 20rem;
-  padding-bottom: 7rem;
+  padding-top: 20.5rem;
+  padding-bottom: 6rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/salud/medicinas/medicinas.jpg");
@@ -13025,7 +13032,13 @@ header.masthead .masthead-subheading {
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+header.medicina .medicina-subheading {
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 header.tecnologia .tecnologia-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -13748,3 +13761,46 @@ button[type="submit"]:hover {
   max-width: 100%;
   height: auto;
 }
+
+/*ejericios Doctor*/
+.gracias-enviado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-enviado-contenido {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.oculto {
+  display: none;
+}
+
+.cerrar {
+ float: right;
+}
+
+.entretenimiento-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.entretenimiento-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+/*Medicina*/
