@@ -65,9 +65,7 @@ var socialDropdown = socialBtn.nextElementSibling;
 //turismo
 var turismoBtn = document.getElementById("turismo-btn");
 var turismoDropdown = turismoBtn.nextElementSibling;
-//contacto
-var contactoBtn = document.getElementById("contacto-btn");
-var contactoDropdown = contactoBtn.nextElementSibling;
+
 
 //entretenimiento
 entretenimientoBtn.addEventListener("mouseenter", function () {
@@ -130,20 +128,7 @@ turismoDropdown.addEventListener("mouseleave", function () {
 });
 
 
-//contacto
-contactoBtn.addEventListener("mouseenter", function () {
-    contactoDropdown.classList.add("show");
-});
-contactoBtn.addEventListener("mouseleave", function () {
-    contactoDropdown.classList.remove("show");
-});
 
-contactoDropdown.addEventListener("mouseenter", function () {
-    contactoDropdown.classList.add("show");
-});
-contactoDropdown.addEventListener("mouseleave", function () {
-    contactoDropdown.classList.remove("show");
-});
 
 //valida compartir receta
 function validarFormularioa() {
