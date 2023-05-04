@@ -314,3 +314,14 @@ function ocultarMedicina(){
     document.getElementById("email").value = "";
     document.getElementById("mensaje").value = "";
 }
+
+//js turismo
+function mostrarForo() {
+    var foroAgregado = document.getElementById("comentario-enviado");
+    foroAgregado.classList.remove("oculto");
+}
+
+function mostrarGuia() {
+    var guiaRegistrada = document.getElementById("mensaje-enviado");
+    guiaRegistrada.classList.remove("oculto");
+}

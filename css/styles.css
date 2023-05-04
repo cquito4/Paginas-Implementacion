@@ -12720,6 +12720,10 @@ p {
   padding: 4rem 0;
 }
 
+#galeria{
+  padding: 3rem 0;
+}
+
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -13913,4 +13917,291 @@ button[type="submit"]:hover {
 /*Carrusel bordes*/
 .carousel-inner {
   border: solid #f3e4b0;
+}
+/*CSS para Entretenimiento*/
+
+header.peliculas {
+  padding-top: 25rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/entretenimiento/peliculas/portada.webp");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+header.peliculas .peliculas-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.peliculas .peliculas-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.tecnologia {
+  padding-top: 34rem;
+  padding-top: 15rem;
+  padding-bottom: 1rem;
+}
+
+
+
+/*CSS para turismo */
+
+header.turismo {
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/turismo/Catedral.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+#turismo .turismo-item .turismo-caption .turismo-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.turismo-col-sm-4 {
+    flex: 0 0 auto;
+    width: 17%;
+  }
+
+.turismo-col-md-4 {
+    flex: 0 0 auto;
+    width: 20%;
+    border: 1px solid #f3e4b0;
+    background-color: white;      
+    margin: 0px;
+    padding: 8px;          
+  }
+
+.turismo-col-lg-4 {
+    flex: 0 0 auto;
+    width: 17%;
+  }
+
+header.turismo .turismo-subheading{
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+
+  header.turismo .turismo-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+/*
+  header.salud .iess-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+*/
+
+  header.turismo .turismo-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  /*
+  header.iess .iess-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }*/
+}
+
+#turismo .turismo-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#turismo .turismo-item .turismo-link .turismo-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background:rgba(143, 146, 119, 0.25);
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#turismo .turismo-item .turismo-link .turismo-hover .turismo-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#turismo .turismo-item .turismo-link:hover .turismo-hover {
+  opacity: 1;
+}
+
+#turismo .turismo-item .turismo-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  
+}
+
+#turismo .turismo-item .turismo-caption .turismo-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+
+#turismo .turismo-item .turism-caption .turism-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.turismo-col-md-4 {
+  flex: 0 0 auto;
+  width: 20%;
+  border: 1px solid #999277;
+  background-color: white;      
+  margin: 25px;
+  padding: 8px;          
+}
+
+.img-fluid-turismo {
+  max-width: 100%;
+  height: 140px;
+  width: 190px;
+  margin: 10px;
+}
+
+
+
+/* Estilos para la navegación */
+/*
+nav ul {
+  //margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  text-align: center;
+}*/
+
+#list-foros a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para el contenido principal */
+/*
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+*/
+section {
+  margin-bottom: 0px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+section h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  display: block;
+  padding: 10px;
+  background-color: #999277;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+li h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+li p {
+  margin: 0;
+}
+
+li p a {
+  color: #333;
+  text-decoration: none;
+}
+
+li p a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+section{
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+#comentarios_foro{
+  margin: 2px;
+  border: 2px solid #999277;
+}
+
+hr {
+  border-color: #999277; /* Cambia el color de la línea a rojo */
+}
+
+#agregar_galeria{
+  text-align: center;
+  margin: 15px;
+  background-position: top;
 }
