@@ -12961,20 +12961,18 @@ header.ejercicios {
   background-position: center center;
   background-size: cover;
 }
-
-header.videojuegos {
-  padding-top: 25.5rem;
-  padding-bottom: 8rem;
+header.medicina {
+  padding-top: 20rem;
+  padding-bottom: 7rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/entretenimiento/videojuegos/1.jpeg");
+  background-image: url("../assets/img/salud/medicinas/medicinas1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
-
-header.salud .salud-subheading {
+header.salud .salud-subheading{
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
@@ -13005,15 +13003,6 @@ header.ejercicios .ejercicios-subheading {
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-header.videojuegos .videojuegos-subheading {
-  font-size: 1.9rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -13063,15 +13052,6 @@ header.ejercicios .ejercicios-heading {
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-header.videojuegos .videojuegos-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
@@ -13149,49 +13129,32 @@ header.tecnologia .tecnologia-heading {
       margin-bottom: 2rem;
     }
 
-    header.salud .iess-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.masthead .masthead-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.tecnologia .tecnologia-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.salud .salud-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-
-    header.iess .iess-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-
-    header.olimpiadas .olimpiadas-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
+  header.salud .iess-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
   }
 
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.salud .salud-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  header.iess .iess-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
