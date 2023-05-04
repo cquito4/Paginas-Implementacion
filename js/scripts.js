@@ -52,10 +52,39 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-//funcion que hace que el dropdown de salud se muestre al pasar el mouse por encima
+//funcion que hace que el dropdown se muestre al pasar el mouse por encima de los menus
+//entretenimiento
+var entretenimientoBtn = document.getElementById("entretenimiento-btn");
+var entretenimientoDropdown = entretenimientoBtn.nextElementSibling;
+//salud
 var saludBtn = document.getElementById("salud-btn");
 var saludDropdown = saludBtn.nextElementSibling;
+//social
+var socialBtn = document.getElementById("social-btn");
+var socialDropdown = socialBtn.nextElementSibling;
+//turismo
+var turismoBtn = document.getElementById("turismo-btn");
+var turismoDropdown = turismoBtn.nextElementSibling;
+//contacto
+var contactoBtn = document.getElementById("contacto-btn");
+var contactoDropdown = contactoBtn.nextElementSibling;
 
+//entretenimiento
+entretenimientoBtn.addEventListener("mouseenter", function () {
+    entretenimientoDropdown.classList.add("show");
+});
+entretenimientoBtn.addEventListener("mouseleave", function () {
+    entretenimientoDropdown.classList.remove("show");
+});
+
+entretenimientoDropdown.addEventListener("mouseenter", function () {
+    entretenimientoDropdown.classList.add("show");
+});
+entretenimientoDropdown.addEventListener("mouseleave", function () {
+    entretenimientoDropdown.classList.remove("show");
+});
+
+//salud
 saludBtn.addEventListener("mouseenter", function () {
     saludDropdown.classList.add("show");
 });
@@ -68,6 +97,52 @@ saludDropdown.addEventListener("mouseenter", function () {
 });
 saludDropdown.addEventListener("mouseleave", function () {
     saludDropdown.classList.remove("show");
+});
+
+//social
+socialBtn.addEventListener("mouseenter", function () {
+    socialDropdown.classList.add("show");
+});
+socialBtn.addEventListener("mouseleave", function () {
+    socialDropdown.classList.remove("show");
+});
+
+socialDropdown.addEventListener("mouseenter", function () {
+    socialDropdown.classList.add("show");
+});
+socialDropdown.addEventListener("mouseleave", function () {
+    socialDropdown.classList.remove("show");
+});
+
+//turismo
+turismoBtn.addEventListener("mouseenter", function () {
+    turismoDropdown.classList.add("show");
+});
+turismoBtn.addEventListener("mouseleave", function () {
+    turismoDropdown.classList.remove("show");
+});
+
+turismoDropdown.addEventListener("mouseenter", function () {
+    turismoDropdown.classList.add("show");
+});
+turismoDropdown.addEventListener("mouseleave", function () {
+    turismoDropdown.classList.remove("show");
+});
+
+
+//contacto
+contactoBtn.addEventListener("mouseenter", function () {
+    contactoDropdown.classList.add("show");
+});
+contactoBtn.addEventListener("mouseleave", function () {
+    contactoDropdown.classList.remove("show");
+});
+
+contactoDropdown.addEventListener("mouseenter", function () {
+    contactoDropdown.classList.add("show");
+});
+contactoDropdown.addEventListener("mouseleave", function () {
+    contactoDropdown.classList.remove("show");
 });
 
 //valida compartir receta
