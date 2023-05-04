@@ -70,12 +70,40 @@ saludDropdown.addEventListener("mouseleave", function () {
     saludDropdown.classList.remove("show");
 });
 
-//carrusel
+//valida compartir receta
+function validarFormularioa() {
+    var nombre = document.getElementById("nombre").value;
+    var receta = document.getElementById("receta").value;
+    var mensaje = document.getElementById("mensaje").value;
+    var mensaje1 = document.getElementById("mensaje1").value;
+    if (nombre === "" || receta === "" || mensaje === "" || mensaje1 === "") {
+        alert("Por favor, completa todos los campos del formulario");
+        return false;
+    } else {
+        alert("El formulario es válido, se puede enviar");
+        return true;
+    }
+}
+//valida comentario
+function validarFormulariob() {
+    var nombreC = document.getElementById("nombreC").value;
+    var comentario = document.getElementById("comentarioC").value;
+
+    if (nombreC === "" || comentario === "") {
+        alert("Por favor, completa todos los campos del formulario");
+        return false;
+    } else {
+        alert("El formulario es válido, se puede enviar");
+        return true;
+    }
+}
 
 //compartir receta
 function mostrarMensaje() {
-    var mensajeEnviado = document.getElementById("mensaje-enviado");
-    mensajeEnviado.classList.remove("oculto");
+    if (validarFormularioa() === true) {
+        var mensajeEnviado = document.getElementById("mensaje-enviado");
+        mensajeEnviado.classList.remove("oculto");
+    }
 }
 
 function ocultarMensaje() {
@@ -89,15 +117,19 @@ function ocultarMensaje() {
 }
 //comentario
 function mostrarComentario() {
-    var comentarioEnviado = document.getElementById("comentario-enviado");
-    comentarioEnviado.classList.remove("oculto");
+    if (validarFormulariob() === true) {
+        var comentarioEnviado = document.getElementById("comentario-enviado");
+        comentarioEnviado.classList.remove("oculto");
+    }
+
 }
 
 function ocultarComentario() {
     var comentarioEnviado = document.getElementById("comentario-enviado");
     comentarioEnviado.classList.add("oculto");
+
     document.getElementById("nombreC").value = "";
-    document.getElementById("comentarioC").value = "";
+    document.getElementById("comentarioC").value = "";    
 }
 
 //iess
