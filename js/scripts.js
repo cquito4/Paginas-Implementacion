@@ -105,3 +105,14 @@ function openUrl() {
     const externalUrl = "https://www.iess.gob.ec/en/web/pensionados/programa-del-adulto-mayor";
     window.open(externalUrl, "_blank");
   }
+
+//js turismo
+function mostrarForo() {
+    var foroAgregado = document.getElementById("comentario-enviado");
+    foroAgregado.classList.remove("oculto");
+}
+
+function mostrarGuia() {
+    var guiaRegistrada = document.getElementById("mensaje-enviado");
+    guiaRegistrada.classList.remove("oculto");
+}
