@@ -125,7 +125,7 @@ function ocultarGracias() {
 
 //validacion de campos (Ejercicio doctor)
 function validarFormulario() {
-    
+
     const nombre = document.getElementById('nombre').value.trim();
     const correo = document.getElementById('correo').value.trim();
     var numero = document.getElementById("numero").value;
@@ -133,17 +133,17 @@ function validarFormulario() {
 
     // Verifica que el campo de nombre no esté vacío
     if (nombre === '') {
-      alert('Por favor ingrese su nombre');
-      return false;
+        alert('Por favor ingrese su nombre');
+        return false;
     }
 
     // Verifica que el campo de correo electrónico no esté vacío y tenga un formato válido
     if (correo === '') {
-      alert('Por favor ingrese su correo electrónico');
-      return false;
+        alert('Por favor ingrese su correo electrónico');
+        return false;
     } else if (!/\S+@\S+\.\S+/.test(correo)) {
-      alert('Por favor ingrese un correo electrónico válido');
-      return false;
+        alert('Por favor ingrese un correo electrónico válido');
+        return false;
     } else if (numero.trim() === "" || !/^\d+$/.test(numero)) {
         alert("Por favor, ingrese un número de contacto válido.");
         return false;
@@ -155,3 +155,15 @@ function validarFormulario() {
     // Si los campos están validados correctamente, devuelve true    
     return true;
 }
+
+//medicina
+const linkedinLink = document.querySelector(".linkedin");
+
+linkedinLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.open("https://www.linkedin.com/in/johannagavidia?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvKnTPcz1ROuGHkRBgfk1Qg%3D%3D", "_blank");
+});
+
+//medicina formulario
+
+
