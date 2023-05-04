@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Eterna - Foros y Consultas</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/img/navbar-logo.png" alt="..." />
+                Vida
+                Eterna - Foros y Consultas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#foros"><b>foros</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conectar"><b>Conectar</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comentarios"><b>Comentarios</b></a></li>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#foros">Inicio</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section bg-light" id="foros">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Foros y Consultas</h2>
+                <div class="salud-subheading">Espacio para compartir o consultar cualquier duda acerca de una vida
+                    saludable, productiva y estable para las personas de la tercera edad.</div>
+
+                <div class="row text-center">
+                    <!-- foro 1-->
+
+                    <head>
+
+                        <link rel="stylesheet" href="styles.css">
+                    </head>
+
+                    <body>
+                        <main>
+                            <img class="img-fluid" src="../../assets/img/social/foroprincipal.jpg" alt="..." />
+                            <section class="temas">
+                                <h2>Temas</h2>
+                                <ul>
+                                    <li><a href="#tema1">El Transporte público en la ciudad de Cuenca, ¿bueno o
+                                            malo?</a></li>
+                                    <br>
+                                    <li><a href="#tema2">Bajo su experiencia, ¿recomienda dar largas caminatas?</a></li>
+                                    <br>
+                                    <li><a href="#tema3">Leyendas del ayer, ¿qué mitos y leyendas ha escuchado en la
+                                            ciudad de Cuenca?</a></li>
+                                </ul>
+                            </section>
+                            <section class="comentarios">
+                                <h2>Comentarios</h2>
+
+                                <div id="tema1">
+                                    <br>
+                                    <h3>El Transporte público en la ciudad de Cuenca, ¿bueno o malo?</h3>
+                                    <form>
+                                        <div>
+                                            <label for="name">Nombre:</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div>
+                                            <label for="email">Correo electrónico:</label>
+                                            <input type="email" id="email" name="email">
+                                        </div>
+                                        <div>
+                                            <label for="title">Título:</label>
+                                            <input type="text" id="title" name="title" required>
+                                        </div>
+                                        <div>
+                                            <label for="comment">Comentario:</label>
+                                            <textarea id="comment" name="comment" required></textarea>
+                                        </div>
+                                        <button type="submit">Enviar comentario</button>
+                                    </form>
+                                    <div id="comentarios-tema1">
+                                        <!-- Aquí se mostrarán los comentarios del tema 1 -->
+                                    </div>
+                                </div>
+                            </section>
+                            <script src="scripts.js"></script>
+                            <script>
+                                // Obtener el formulario
+                                const commentForm = document.querySelector('form');
+
+                                // Agregar el evento de enviar el formulario
+                                commentForm.addEventListener('submit', (event) => {
+                                    event.preventDefault(); // Prevenir la acción por defecto del formulario
+
+                                    sendComment(); // Llamar a la función sendComment()
+                            </script>
+                            <div id="tema2">
+                                <br>
+                                <h3>Bajo su experiencia, ¿recomienda dar largas caminatas?</h3>
+                                <form>
+                                    <div>
+                                        <label for="name">Nombre:</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div>
+                                        <label for="email">Correo electrónico:</label>
+                                        <input type="email" id="email" name="email">
+                                    </div>
+                                    <div>
+                                        <label for="title">Título:</label>
+                                        <input type="text" id="title" name="title" required>
+                                    </div>
+                                    <div>
+                                        <label for="comment">Comentario:</label>
+                                        <textarea id="comment" name="comment" required></textarea>
+                                    </div>
+                                    <button type="submit">Enviar comentario</button>
+                                </form>
+                                <div id="comentarios-tema1">
+                                    <!-- Aquí se mostrarán los comentarios del tema 1 -->
+                                </div>
+                            </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script>
+                                    // Obtener el formulario
+                                    const commentForm = document.querySelector('form');
+
+                                    // Agregar el evento de enviar el formulario
+                                    commentForm.addEventListener('submit', (event) => {
+                                        event.preventDefault(); // Prevenir la acción por defecto del formulario
+
+                                        sendComment(); // Llamar a la función sendComment()
+    </script>
+
+
+
+
+    </main>
+
+</body>
+
+<!-- receta 10-->
+<div class=" salud-col-md-4">
+    <div class="entretenimiento-item">
+        <a class="entretenimiento-link" data-bs-toggle="modal" href="#receta10">
+            <div class="entretenimiento-hover">
+                <div class="entretenimiento-hover-content"><i class="fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="../../assets/img/social/radares.jpg" alt="..." />
+        </a>
+        <div class="entretenimiento-caption">
+            <div class="entretenimiento-caption-heading">LOS RADARES EN CUENCA</div>
+            <div class="entretenimiento-caption-subheading text-muted">el alcalde electo de Cuenca, Cristian Zamora,
+                ratificó que apenas se posesione -en mayo- dará de baja este acuerdo.
+                El anuncio del inicio de las multas lo hizo el gerente general de la Empresa de Movilidad (EMOV) del
+                Municipio local, Juan Carlos Aguirre, quien aseveró que todo responde a un cronograma previamente
+                establecido entre ellos y el consorcio Móvil Technology Ecuador, adjudicado para instalar ocho equipos
+                en la vía rápida Cuenca-Azogues y dos en la ruta Medio Ejido-Sayausí.
+                Durante la última campaña electoral estos dispositivos estuvieron apagados, pero ahora se encenderán.
+                Por lo tanto, desde este lunes y durante las 24 horas del día, los conductores de autos livianos que
+                superen los 90 kilómetros por hora serán sancionados de la siguiente forma: si circulan en un rango de
+                entre 91 y 120 kilómetros por hora (km/h), serán sancionados con $ 135 que corresponden al 30 % de un
+                salario básico unificado; y para los que manejen a una velocidad superior a los 121 km la multa será de
+                $ 450, un salario completo.
+                Comisión de Fiscalización de la Asamblea sugiere terminar contrato de radares en Cuenca
+                En el caso de camiones pesados, el rango de velocidad mínima permitida es de 70 km/h.</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="page-section bg-light" id="conectar">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Conéctate con nosotros</h2>
+            <h3 class="section-subheading text-muted"><b>"Comparte tus temas de debate"</b>
+            </h3>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row justify-content-center align-items-center ">
+            <div class="col-md-6">
+                <div>
+                    <form class="text-lg-start">
+                        <label for="nombre"><b>¿Cómo te llamas?</b> </label>
+                        <input type="text" id="nombre" name="nombre" value="Andres"><br>
+
+                        <label for="correo"><b>¿Cómo se llama tu receta?</b> </label>
+                        <input type="text" id="temanuevo" name="temanuevo" value="Globalizacion, buena o mala"><br>
+
+                        <label for="mensaje"><b>Describenos como se prepara</b> </label>
+                        <form>
+                            <textarea id="mensaje"
+                                name="Tema">La globalizacion trae mas problemas que beneficios por la perdida de nuestra identidad</textarea><br>
+                        </form>
+                    </form>
+                    <div class="text-center">
+                        <button type="button" class="text-center btn btn-primary btn-xl "
+                            onclick="mostrarMensaje()">Compartir nuevo tema</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="imagen img-fluid text-center">
+                    <img src="../../assets/img/salud/alimentos/comparte.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section bg-light comentarios text-center" id="comentarios">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Comentanos</h2>
+            <h3 class="section-subheading text-muted"><b>¿Qué tal te parece el foro? ¡Deja tu comentario y cuéntanos
+                    cómo
+                    te fue!</b>
+            </h3>
+        </div>
+        <div class="coment">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombreC" name="nombre" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentarioC" name="comentario" rows="5" required></textarea>
+
+                <button type="button" class="text-center btn btn-primary btn-xl" onclick="mostrarComentario()">Enviar
+                    comentario</button>
+            </form>
+            <div id="comentario-mensaje"></div>
+        </div>
+</section>
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">&copy Realizado por: Andres Meneses</div>
+        </div>
+    </div>
+</footer>
+
+</html>
