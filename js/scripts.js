@@ -105,7 +105,6 @@ function openUrl() {
     const externalUrl = "https://www.iess.gob.ec/en/web/pensionados/programa-del-adulto-mayor";
     window.open(externalUrl, "_blank");
 }
-
 //ejercicios doctor
 function graciasMensaje() {
     var graciasEnviado = document.getElementById("gracias-enviado");
