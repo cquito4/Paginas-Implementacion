@@ -52,3 +52,70 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function sendComment() {
+    // Obtener los valores del formulario
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const title = document.getElementById("title").value;
+    const comment = document.getElementById("comment").value;
+  
+    // Crear un objeto con los datos del comentario
+    const data = {
+      name: name,
+      email: email,
+      title: title,
+      comment: comment
+    };
+  
+    // Enviar los datos del comentario al servidor usando Fetch
+    fetch("/api/comments", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Actualizar la sección de comentarios con el nuevo comentario
+        getComments();
+      })
+      .catch(error => {
+        console.error(error);
+      });
+      
+  }
+
+  function getComments() {
+    // Recuperar los comentarios del servidor usando Fetch
+    fetch("/api/comments")
+      .then(response => response.json())
+      .then(data => {
+        // Limpiar la sección de comentarios
+        const commentsSection = document.getElementById("comentarios-tema1");
+        commentsSection.innerHTML = "";
+  
+        // Agregar cada comentario a la sección de comentarios
+        data.forEach(comment => {
+          const commentElement = document.createElement("div");
+          commentElement.classList.add("comment");
+          commentElement.innerHTML = `
+            <h3>${comment.title}</h3>
+            <p>${comment.comment}</p>
+            <div class="comment-info">
+              <span>${comment.name}</span>
+              <span>${comment.email}</span>
+            </div>
+          `;
+          commentsSection.appendChild(commentElement);
+        });
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+  
+  
+
