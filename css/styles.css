@@ -12611,6 +12611,17 @@ header.ejercicios {
   background-position: center center;
   background-size: cover;
 }
+header.medicina {
+  padding-top: 20rem;
+  padding-bottom: 7rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/salud/medicinas/medicinas1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 header.salud .salud-subheading{
   font-size: 1.5rem;
   font-style: italic;
@@ -12626,6 +12637,13 @@ header.iess .iess-subheading{
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.ejercicios .ejercicios-subheading{
+  font-size: 1.9rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.medicina .medicina-subheading{
   font-size: 1.9rem;
   font-style: italic;
   line-height: 1.5rem;
@@ -12655,6 +12673,13 @@ header.iess .iess-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.ejercicios .ejercicios-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.medicina .medicina-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -12694,7 +12719,12 @@ header.masthead .masthead-heading {
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
-
+  header.salud .medicina-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -12708,6 +12738,12 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
   header.iess .iess-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  header.medicina .medicina-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
