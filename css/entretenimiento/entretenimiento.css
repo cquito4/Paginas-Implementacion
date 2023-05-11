@@ -4488,7 +4488,7 @@ fieldset:disabled .btn {
 
 #hero-slide .carousel-caption {
   background: var(--white-color);
-  clip-path: polygon(100% 100%, 100% 150px, 0 100%);
+  clip-path: polygon(100% 100%, 100% 10px, 0 100%);
   color: var(--secondary-color);
   top: 1px;
   bottom: -1px;
@@ -12735,38 +12735,17 @@ p {
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  /* --primary-color: #5bc1ac;
-  --secondary-color: #5a6f80; */
+  --primary-color: #5bc1ac;
+  --secondary-color: #5a6f80;
   --section-bg-color: #f0f8ff;
-  /* --site-footer-bg-color: #44525d;
+  --site-footer-bg-color: #44525d;
   --custom-btn-bg-color: #597081;
   --custom-btn-bg-hover-color: #5bc1ac;
   --dark-color: #000000;
   --p-color: #717275;
-  --border-color: #e9eaeb; */
+  --border-color: #e9eaeb;
 }
 
-/* --body-font-family: 'Metropolis', sans-serif;
-
-  --h1-font-size: 52px;
-  --h2-font-size: 46px;
-  --h3-font-size: 32px;
-  --h4-font-size: 28px;
-  --h5-font-size: 24px;
-  --h6-font-size: 22px;
-  --p-font-size: 16px;
-  --btn-font-size: 18px;
-  --copyright-font-size: 14px;
-
-  --border-radius-large: 100px;
-  --border-radius-medium: 20px;
-  --border-radius-small: 10px;
-
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-} */
 
 /*---------------------------------------
   CUSTOM TEXT BOX               
@@ -12920,18 +12899,6 @@ header.masthead {
   background-size: cover;
 }
 
-header.salud {
-  padding-top: 8.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/salud/alimentos/pAlimentos.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
 header.tecnologia {
   padding-top: 30rem;
   padding-bottom: 8rem;
@@ -12944,17 +12911,6 @@ header.tecnologia {
   background-size: cover;
 }
 
-header.iess {
-  padding-top: 18rem;
-  padding-bottom: 8rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/salud/iess/iess.png");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
 
 header.olimpiadas {
   padding-top: 18rem;
@@ -12968,72 +12924,8 @@ header.olimpiadas {
   background-size: cover;
 }
 
-header.ejercicios {
-  padding-top: 20.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/salud/ejercicios/ejercicios.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
-header.medicina {
-  padding-top: 20.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/salud/medicinas/medicinas.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
-header.salud .salud-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.iess .iess-subheading {
-  font-size: 2.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 header.olimpiadas .olimpiadas-subheading {
   font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.ejercicios .ejercicios-subheading {
-  font-size: 1.9rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.medicina .medicina-subheading {
-  font-size: 2rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
@@ -13048,24 +12940,6 @@ header.tecnologia .tecnologia-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
-
-header.salud .salud-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.iess .iess-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 header.olimpidas .olimpidas-heading {
   font-size: 3.25rem;
   font-weight: 700;
@@ -13074,29 +12948,6 @@ header.olimpidas .olimpidas-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header.ejercicios .ejercicios-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.medicina .medicina-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 
 header.tecnologia .tecnologia-heading {
   font-size: 5rem;
@@ -13149,74 +13000,6 @@ header.tecnologia .tecnologia-heading {
     padding-bottom: 12.5rem;
   }
 
-  @media (min-width: 768px) {
-    header.masthead {
-      padding-top: 17rem;
-      padding-bottom: 12.5rem;
-    }
-
-    header.tecnologia {
-      padding-top: 34rem;
-      padding-bottom: 1rem;
-    }
-
-    header.salud .salud-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.salud .iess-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.salud .medicina-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.masthead .masthead-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-    }
-
-    header.salud .salud-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-
-    header.iess .iess-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-
-    header.medicina .medicina-heading {
-      font-size: 4.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-    }
-  }
-
-  header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
-
   header.tecnologia .tecnologia-heading {
     font-size: 5.5rem;
     font-weight: 600;
@@ -13231,23 +13014,12 @@ header.tecnologia .tecnologia-heading {
   margin-right: auto;
 }
 
-#salud .salud-item {
-  max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #entretenimiento .entretenimiento-item .entretenimiento-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
 
-#salud .salud-item .salud-link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
 
 
 #entretenimiento .entretenimiento-item .entretenimiento-link .entretenimiento-hover {
@@ -13262,35 +13034,17 @@ header.tecnologia .tecnologia-heading {
   transition: opacity ease-in-out 0.25s;
 }
 
-#salud .salud-item .salud-link .salud-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  background: rgba(143, 146, 119, 0.25);
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
 
 #entretenimiento .entretenimiento-item .entretenimiento-link .entretenimiento-hover .entretenimiento-hover-content {
   font-size: 1.25rem;
   color: white;
 }
 
-#salud .salud-item .salud-link .salud-hover .salud-hover-content {
-  font-size: 1.25rem;
-  color: white;
-}
 
 #entretenimiento .entretenimiento-item .entretenimiento-link:hover .entretenimiento-hover {
   opacity: 1;
 }
 
-#salud .salud-item .salud-link:hover .salud-hover {
-  opacity: 1;
-}
 
 #entretenimiento .entretenimiento-item .entretenimiento-caption {
   padding: 1.5rem;
@@ -13299,12 +13053,7 @@ header.tecnologia .tecnologia-heading {
 
 }
 
-#salud .salud-item .salud-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
 
-}
 
 #entretenimiento .entretenimiento-item .entretenimiento-caption .entretenimiento-caption-heading {
   font-size: 1.5rem;
@@ -13313,22 +13062,14 @@ header.tecnologia .tecnologia-heading {
   margin-bottom: 0;
 }
 
-#salud .salud-item .salud-caption .salud-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  margin-bottom: 0;
-}
+
 
 #entretenimiento .entretenimiento-item .entretenimiento-caption .entretenimiento-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#salud .salud-item .salud-caption .salud-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+
 
 .entretenimiento-modal .modal-dialog {
   margin: 1rem;
@@ -13586,92 +13327,12 @@ header.tecnologia .tecnologia-heading {
   }
 }
 
-.team-member {
-  margin-bottom: 3rem;
-  text-align: center;
-}
 
-.team-member img {
-  width: 14rem;
-  height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
-}
-
-.team-member h4,
-.team-member .h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
 
 .img-brand {
   height: 2.75rem;
 }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section#contact .section-heading {
-  color: #fff;
-}
-
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
-}
-
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
-}
-
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
-
-section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
-}
-
-section#contact form#contactForm p.help-block {
-  margin: 0;
-}
-
-section#contact form#contactForm .form-control:focus {
-  border-color: #999277;
-  box-shadow: none;
-}
-
-section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
-
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
-}
 
 .footer {
   text-align: center;
@@ -13679,7 +13340,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/*carrusel*/
 
 /*compartir receta*/
 .mensaje-enviado {
@@ -13705,46 +13365,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: none;
 }
 
-/*Estilo para la receta ul*/
-.entretenimiento-modal #receta1 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta2 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta3 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta4 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta5 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta6 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta7 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta8 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta9 ul {
-  list-style-type: square;
-}
-
-.entretenimiento-modal #receta10 ul {
-  list-style-type: square;
-}
 
 /* Estilos para el formulario */
 form {
@@ -13801,25 +13421,6 @@ button[type="submit"]:hover {
   margin-bottom: 5px;
 }
 
-/*comentarios*/
-.comentario-enviado {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.comentario-enviado-contenido {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-}
 
 .oculto {
   display: none;
@@ -13830,25 +13431,6 @@ button[type="submit"]:hover {
   height: auto;
 }
 
-/*ejericios Doctor*/
-.gracias-enviado {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gracias-enviado-contenido {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-}
 
 .oculto {
   display: none;
@@ -13872,25 +13454,6 @@ button[type="submit"]:hover {
   opacity: 0.3;
 }
 
-/*Medicina*/
-.gracias-medicina {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gracias-medicina-contenido {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-}
 
 .oculto {
   display: none;
@@ -13945,172 +13508,6 @@ header.tecnologia {
 
 
 
-/*CSS para turismo */
-
-header.turismo {
-  padding-top: 8.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/turismo/Catedral.png");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
-#turismo .turismo-item .turismo-caption .turismo-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.turismo-col-sm-4 {
-    flex: 0 0 auto;
-    width: 17%;
-  }
-
-.turismo-col-md-4 {
-    flex: 0 0 auto;
-    width: 20%;
-    border: 1px solid #f3e4b0;
-    background-color: white;      
-    margin: 0px;
-    padding: 8px;          
-  }
-
-.turismo-col-lg-4 {
-    flex: 0 0 auto;
-    width: 17%;
-  }
-
-header.turismo .turismo-subheading{
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-
-  header.turismo .turismo-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-/*
-  header.salud .iess-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-*/
-
-  header.turismo .turismo-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
-  /*
-  header.iess .iess-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }*/
-}
-
-#turismo .turismo-item {
-  max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#turismo .turismo-item .turismo-link .turismo-hover {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  background:rgba(143, 146, 119, 0.25);
-  justify-content: center;
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-
-#turismo .turismo-item .turismo-link .turismo-hover .turismo-hover-content {
-  font-size: 1.25rem;
-  color: white;
-}
-
-#turismo .turismo-item .turismo-link:hover .turismo-hover {
-  opacity: 1;
-}
-
-#turismo .turismo-item .turismo-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
-  
-}
-
-#turismo .turismo-item .turismo-caption .turismo-caption-heading {
-  font-size: 1.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-
-#turismo .turismo-item .turism-caption .turism-caption-subheading {
-  font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.turismo-col-md-4 {
-  flex: 0 0 auto;
-  width: 20%;
-  border: 1px solid #999277;
-  background-color: white;      
-  margin: 25px;
-  padding: 8px;          
-}
-
-.img-fluid-turismo {
-  max-width: 100%;
-  height: 140px;
-  width: 190px;
-  margin: 10px;
-}
-
-
-
-/* Estilos para la navegación */
-/*
-nav ul {
-  //margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #f2f2f2;
-  text-align: center;
-}*/
-
-#list-foros a:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Estilos para el contenido principal */
-/*
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-}
-*/
 section {
   margin-bottom: 0px;
 }
@@ -14180,18 +13577,3 @@ section{
   text-align: center;
 }
 
-
-#comentarios_foro{
-  margin: 2px;
-  border: 2px solid #999277;
-}
-
-hr {
-  border-color: #999277; /* Cambia el color de la línea a rojo */
-}
-
-#agregar_galeria{
-  text-align: center;
-  margin: 15px;
-  background-position: top;
-}
